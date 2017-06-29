@@ -1,0 +1,35 @@
+<!html>
+<html>
+  <head>
+    <link rel="stylesheet" href="StyleSheet.css">
+  </head>
+  <body>
+    <h1> Random Meme Generator! </h1>
+    <p id="byline"> created by: christine (with her limited coding abilities) </p>
+    <script>
+        var sites = [
+            'http://i3.kym-cdn.com/photos/images/newsfeed/001/217/729/f9a.jpg',
+            'http://www.fullredneck.com/wp-content/uploads/2016/04/Funny-Russia-Meme-20.jpg',
+            'https://s-media-cache-ak0.pinimg.com/736x/92/bd/51/92bd51939ce6e27f773aee3516b2cd6f--steve-harvey-happy-monday.jpg',
+            'https://thechive.files.wordpress.com/2017/04/lead148.jpg?quality=85&strip=info',
+            'https://lh3.googleusercontent.com/5wOiHP9Z8NemfNLH83bPUe6Jsm4yaHTyKIPhFcbFqvLyOJcA-bggGjOw9XFFlYNBqBw=h900',
+            'https://s-media-cache-ak0.pinimg.com/736x/79/0a/f7/790af7f598d0a3f6af7f4ea005332780--old-painting-meme-funny-old-paintings.jpg',
+            'http://www.fullredneck.com/wp-content/uploads/2016/05/Hillary-Clinton-Meme-1.png',
+            'https://pbs.twimg.com/profile_images/813458000312561664/DvwMkjnB.jpg',
+            'http://cdn.arstechnica.net/wp-content/uploads/2015/04/aejLwR5_700b_v2-600x337.jpg',
+            'http://i2.kym-cdn.com/photos/images/facebook/000/077/988/my_body_is_ready.png',
+            'https://i.imgflip.com/1lomp1.jpg',
+            'https://pics.me.me/its-a-meme-you-dip-rng-lip-com-2588563.png',
+            'https://i.ytimg.com/vi/gd5VyPmbJI4/maxresdefault.jpg',
+            'http://cdn1.thecomeback.com/wp-content/uploads/2016/04/jordan_piccolo-640x356.jpg',
+            'http://memeshappen.com/media/created/donald-trump-dogald-trump-meme-46432.jpg'
+        ];
+        function randomSite() {
+            var i = parseInt(Math.random() * sites.length);
+            location.href = sites[i];
+        }
+    </script>
+    <p id= "meme"> <a href="#" onclick="randomSite();"> click here! </a> </p>
+  </body>
+
+<html>
