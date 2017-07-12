@@ -31,9 +31,14 @@
         function randomSite() {
             var i = parseInt(Math.random() * sites.length);
             location.href = sites[i];
+      
+        function myFunction() {
+          alert(<a href= "https://randommemegenerator.github.io/"> back to home page!</a>);
         }
     </script>
     <p id= "meme"> <a href="#" onclick="randomSite();"> click here! </a> </p>
+    <button onclick="setTimeout(myFunction, 3000);"> back to home page! </button>
+
   </body>
 
 <html>
